@@ -23,7 +23,7 @@ class Command(BaseCommand):
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # "So‘nggi yangiliklar" qismi
+        # latest news
         main_news_container = soup.find("div", class_="flex-row row")
         print("main_news_container:", bool(main_news_container))
         if not main_news_container:
