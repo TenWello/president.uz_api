@@ -1,5 +1,3 @@
-# news/tasks.py
-
 from celery import shared_task
 from .models import News
 from .management.commands.fetch_presidentuz import fetch_presidentuz
